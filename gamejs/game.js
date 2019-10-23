@@ -475,6 +475,43 @@ function Ghost(offx, offy) {
     display: 1
   });
   this.sticks.push({
+    p1: this.points[1],
+    p2: this.points[3],
+    length: distance(this.points[3], this.points[1]),
+    display: 0
+  });
+  this.sticks.push({
+    p1: this.points[1],
+    p2: this.points[4],
+    length: distance(this.points[4], this.points[1]),
+    display: 0
+  });
+  this.sticks.push({
+    p1: this.points[4],
+    p2: this.points[6],
+    length: distance(this.points[4], this.points[6]),
+    display: 0
+  });
+  this.sticks.push({
+    p1: this.points[3],
+    p2: this.points[7],
+    length: distance(this.points[3], this.points[7]),
+    display: 0
+  });
+
+  this.sticks.push({
+    p1: this.points[2],
+    p2: this.points[3],
+    length: distance(this.points[3], this.points[2]),
+    display: 0
+  });
+  this.sticks.push({
+    p1: this.points[2],
+    p2: this.points[4],
+    length: distance(this.points[4], this.points[2]),
+    display: 0
+  });
+  this.sticks.push({
     p1: this.points[4],
     p2: this.points[5],
     length: distance(this.points[4], this.points[5]),
